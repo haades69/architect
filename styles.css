@@ -122,63 +122,114 @@ main {
   color: #ff900e;
 }
 
+/* facts */
+.factstext {
+  text-align: center;
+  padding-top: 130px;
+}
+.factsbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+.cards {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  text-align: center;
+  padding: 20px 40px;
+}
 
-
-
-
-
+/* sponsers */
+.sponsertext {
+  text-align: center;
+  margin: 100px 0px 50px;
+}
+.sponserlogos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
 
 /* responsive header */
 
 @media screen and (max-width: 576px) {
-    header {
-      padding: 50px 20px;
-    }
-    .navbar {
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-    .navtitle {
-      margin: 0px;
-      padding-bottom: 30px;
-    }
-
-    /* teams */
-    .teams{
-        flex-direction: column;
-    }
-    .teamsimgs{
-        grid-template-columns:1fr;
-    }
-    .teamstext{
-        margin-top: 20px;
-        padding: 0px 50px ;
-        text-align: center;
-    }
+  header {
+    padding: 50px 20px;
   }
-  @media screen and (min-width: 576px) and (max-width: 992px) {
-    header {
-      padding: 50px 20px;
-    }
-    .navbar {
-      flex-direction: column;
-      text-align: center;
-    }
-    .navtitle {
-      margin: 0px;
-      padding-bottom: 30px;
-    }
-    .bannerdesc {
-      max-width: 80%;
-      margin-left: 50px;
-    }
-    .teams{
-        flex-direction: column;
-    }
-    .teamstext{
-        margin-top: 20px;
-        text-align: center;
-    }
+  .navbar {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .navtitle {
+    margin: 0px;
+    padding-bottom: 30px;
   }
 
+  .teams {
+    flex-direction: column;
+  }
+  .teamsimgs {
+    grid-template-columns: 1fr;
+  }
+  .teamstext {
+    margin-top: 20px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+  .factstext {
+    padding: 20px 20px;
+  }
+  .factsbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+    gap: 10px;
+  }
+  .sponserlogos {
+    flex-direction: column;
+  }
+ .sponserlogos img{
+    width: 200px;
+ }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  header {
+    padding: 50px 20px;
+  }
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navtitle {
+    margin: 0px;
+    padding-bottom: 30px;
+  }
+  .bannerdesc {
+    max-width: 80%;
+    margin-left: 50px;
+  }
+  .teams {
+    flex-direction: column;
+  }
+  .teamstext {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .factsbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+    gap: 10px;
+    padding: 10px;
+  }
+  .sponserlogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 30px;
+    gap: 10px;
+  }
+}
